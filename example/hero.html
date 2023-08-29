@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 95vh;
+            max-width: 100%;
+            background: rgb(32, 42, 44);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            height: 30rem;
+            width: 21rem;
+            background: rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-family: sans-serif;
+            color: rgb(96, 96, 192);
+        }
+
+        input {
+            width: 15rem;
+            padding: 10px;
+            margin: 10px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            background: rgba(130, 118, 73, 0.336);
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 2px;
+        }
+        button{
+            outline: none;
+            border: none;
+            padding: 10px 45px;
+            margin: 30px;
+            border-radius: 20px;
+            color: #fff;
+            background: rgb(104, 32, 192);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgba(93, 35, 163, 0.596);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <form method="post" action="/login">
+            <h1>Sign up</h1>
+            <input type="email" name="email" placeholder="enter email" required>
+            <br>
+            <input type="password" name="password" id="password" placeholder="enter password" required>
+            <p>massege is here </p>
+            <button type="submit">login in</button>
+        </form>
+    </div>
+</body>
+
+</html>
